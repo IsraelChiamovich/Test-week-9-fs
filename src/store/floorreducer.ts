@@ -1,6 +1,6 @@
 // src/store/floorreducer.ts
 
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 
 interface FloorAccessState {
@@ -15,6 +15,12 @@ const floorSlice = createSlice({
     name: "floorAccess",
     initialState,
     reducers: {
-        changeAccess: () => {}
-    }
-})
+        changeAccess: (state, action: PayloadAction<number>) => {
+            const index = action.payload;
+            state.floorAccess[index] = !state.floorAccess[index];
+        },
+    },
+});
+
+export const { changeAccess } = floorSlice.actions;
+export default floorSlice.reducer;
