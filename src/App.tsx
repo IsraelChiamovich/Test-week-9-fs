@@ -8,7 +8,26 @@ import Layout from "./components/Layout/Layout";
 import Forbidden from "./pages/Forbidden/Forbidden";
 
 const router = createBrowserRouter([
- //FILL HERE
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Reception />,
+      },
+      {
+        path: "forbidden",
+        element: <Forbidden />,
+      },
+      {
+        path: "floor/:index",
+        element: (
+          <PrivateRoute component={<Floor />} /> 
+        ),
+      },
+    ],
+  },
 ]);
 
 function App() {
