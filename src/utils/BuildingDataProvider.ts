@@ -14,15 +14,12 @@ interface Floor {
 const useBuildingData = () => {
   const [buildingData, setBuildingData] = useState<Floor[]>([]);
 
-  //FILL HERE LOGIC TO SET THE BUILDING DATA
   useEffect(() => {
     setBuildingData(buildingDataFile);
   }, []);
 
-  //
   const getFloorByIndex = (floorIndex:number): Floor |undefined => buildingData[floorIndex];
 
-  //
   const getListOfActivities = ():string[] => buildingData.map((floor: Floor) => floor.activity);
 
   return {

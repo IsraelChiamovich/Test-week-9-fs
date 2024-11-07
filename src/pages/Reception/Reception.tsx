@@ -25,8 +25,6 @@ const Reception: React.FC = () => {
   };
 
   const handleSetRole = (index: number) => {
-    console.log("Selected role index:", index);
-    console.log("Role name:", optionalroles[index]);
     dispatch(setRole(index));
   };
 

@@ -10,7 +10,6 @@ interface IPrivateRoute{
 }
 
 const PrivateRoute = ({ component }:IPrivateRoute) => {
-    //FILL HERE 3.6
     const floorAccess = useSelector((state: RootState) => state.floorAccess.floorAccess);
     const { index } = useParams<{ index: string }>();
     const navigate = useNavigate();
