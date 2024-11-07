@@ -9,7 +9,6 @@ interface IuseActivityParams {
 }
 
 const useIsVerified = ({ activity, role, activities }: IuseActivityParams) => {
-  //FILL HERE 3.7
   const roleIndex = roles.indexOf(role);
   const activityIndex = activities.indexOf(activity);
 
