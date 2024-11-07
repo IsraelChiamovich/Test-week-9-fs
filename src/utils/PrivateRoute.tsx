@@ -1,3 +1,5 @@
+// src/utils/PrivateRoute.tsx
+
 import { ReactNode, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router";

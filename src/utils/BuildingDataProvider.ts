@@ -1,3 +1,5 @@
+// src/utils/BuildingDataProvider.ts
+
 import { useState, useEffect } from 'react';
 
 interface Floor {

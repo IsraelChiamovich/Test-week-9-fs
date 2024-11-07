@@ -1,3 +1,5 @@
+// src/pages/Reception/Reception.tsx
+
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeAccess } from "../../store/floorreducer";

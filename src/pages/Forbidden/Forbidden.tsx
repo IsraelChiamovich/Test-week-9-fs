@@ -1,3 +1,5 @@
+// src/pages/Forbidden/Forbidden.tsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Forbidden.css';

@@ -1,3 +1,5 @@
+// src/App.tsx
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Reception from "./pages/Reception/Reception";
 import Floor from "./pages/Floor/Floor";

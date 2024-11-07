@@ -1,3 +1,5 @@
+// src/pages/Floor/Floor.tsx
+
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import useIsVerified from '../../utils/VerifyActivity';
